@@ -36,6 +36,7 @@ search.addEventListener("click", () => {
       const humidity = document.querySelector(".weather-details .humidity span");
       const wind = document.querySelector(".weather-details .wind span");
 
+      console.log(json.weather[0].main);
       switch (json.weather[0].main) {
         case "Clear":
           image.src = "./assets/images/clear.png";
@@ -49,8 +50,9 @@ search.addEventListener("click", () => {
         case "Clouds":
           image.src = "./assets/images/cloud.png";
           break;
+        case "Mist":
         case "Haze":
-          image.src = "./assets/images/haze.png";
+          image.src = "./assets/images/mist.png";
           break;
         default:
           image.src = "";
