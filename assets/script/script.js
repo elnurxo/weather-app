@@ -72,5 +72,5 @@ search.addEventListener("click", () => {
     });
 
     //easter egg
-    console.log("it's always sunny in Philadelphia");
+    console.log("it's always sunny in Philadelphia!");
 });
